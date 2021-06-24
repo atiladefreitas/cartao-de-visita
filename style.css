@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  overflow: hidden;
+  background: url(my-background.jpg) no-repeat;
+
+  background-size: cover;
+
+  background-position: center center;
+  perspective: 1000px;
+}
+
+.card-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: stretch;
+  min-height: 50vh;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+  border-top: 5px inset rgba(32, 10, 66, 0.3);
+  border-left: 5px inset rgba(32, 10, 66, 0.3);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+}
+
+.card-header {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 500px 0;
+}
+
+.user-profile-image {
+  background-image: url("profile-pic.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.username {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: white;
+  font-size: x-large;
+}
+
+.user-bio {
+  color: white;
+  font-weight: normal;
+  font-size: medium;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  column-gap: 40px;
+  margin: 20% 0 20% 0;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.item-value {
+  font-weight: 700;
+}
+
+.card-footer {
+  width: 100%;
+}
+
+.follow-button {
+  background: white;
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #1a0835;
+}
